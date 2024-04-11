@@ -10,15 +10,12 @@
   </thead>
 
   <tbody>
-    <tr>
-      <td>1</td>
-      <td>Monge e o Executivo</td>
-      <td>Auto-ajuda</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>Cronicas de Gelo e Fogo</td>
-      <td>Contos</td>
-    </tr>
+    <ng-container *ngFor="let b of books">
+      <tr>
+        <td>{{b.id}}</td>
+        <td>{{b.title}}</td>
+        <td>{{b.category}}</td>
+      </tr>
+    </ng-container>
   </tbody>
 </table>
